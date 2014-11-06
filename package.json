@@ -1,0 +1,31 @@
+{
+  "name": "lookjs",
+  "description": "Micro library for frontend operations I always need",
+  "version": "0.0.0",
+  "author": {
+    "name": "Elena Torro",
+    "email": "elenatorrou@gmail.com",
+    "url": "https://github.com/elenatorro"
+  },
+  "dependencies": {
+    "coffee-script": "*"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "should": "*",
+    "chai": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "keywords": [
+    "frontend",
+    "library",
+    "CSS"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "sh test/test.sh",
+    "prepublish": "npm prune"
+  }
+}
