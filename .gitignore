@@ -31,3 +31,10 @@ coverage
 # Other
 ############################
 .node_history
+
+
+############################
+# Dist CSS and Scripts
+############################
+testpage/assets/css
+testpage/assets/scripts
