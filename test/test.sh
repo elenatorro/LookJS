@@ -21,4 +21,4 @@ run (){
 
 ## Main
 welcome && run \
-test/test.js
+test/test.js \
