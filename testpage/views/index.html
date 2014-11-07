@@ -1,15 +1,21 @@
 <!doctype html>
-<html class="no-js" lang="en">
+<html>
     <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>LookJS testing</title>
-        <meta name="description" content="test page">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../css/style.css">
+        <title>Simple Tests - Using Mocha & Chai</title>
+        <link rel="stylesheet" href="/testpage/css/mocha.css" />
     </head>
     <body>
-        <h1>LookJS</h1>
-        <script src="../../lib/Look.js"></script>
+        <div id="mocha"></div>
+        <script src="mocha.js"></script>
+        <script src="chai.js"></script>
+        <script>
+            mocha.ui('bdd');
+            mocha.reporter('html');
+            var expect = chai.expect;
+        </script>
+        <script src="/test/test.js"></script>
+        <script>
+            mocha.run(); // 6
+        </script>
     </body>
 </html>
