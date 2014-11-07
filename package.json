@@ -21,6 +21,7 @@
     "gulp": "^3.8.10",
     "gulp-less": "^1.3.6",
     "mocha": "*",
+    "qunitjs": "^1.15.0",
     "should": "*"
   },
   "engines": {
