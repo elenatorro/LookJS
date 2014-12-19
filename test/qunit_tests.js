@@ -13,13 +13,13 @@ function testDivCreation(object, container) {
     assert.equal(container.lastChild, div)
   })
 }
-testDivCreation({'tag':'div'}, 'container');
+testDivCreation({'tag':'div'}, document.getElementById('container_one'));
 
 /*Div Creation by Default*/
 function testDivCreationDefault(object) {
   QUnit.test(object, function(assert) {
     var div = Look.create(object);
-    assert.equal(body.lastChild, div)
+    assert.equal(document.body.lastChild, div)
   })
 }
 testDivCreationDefault({'tag':'div'});
@@ -27,23 +27,49 @@ testDivCreationDefault({'tag':'div'});
 
 /*Div Parameters Id and Class*/
 function testDivParameters(object, container) {
+  var div = Look.create(object,container);
   QUnit.test(object, function(assert) {
-    var div = Look.create(object);
     assert.equal('divClass', div.className);
   });
 
   QUnit.test(object, function(assert) {
-    var div = Look.create(object);
     assert.equal('divId', div.id);
+  });
+}
+testDivParameters({'tag':'div', 'attr' : {'class':'divClass', 'id':'divId'}}, document.getElementById('container_two'));
+
+function testDivRecursion(object, container) {
+  var div = Look.create(object,container);
+  console.log(object.content);
+  QUnit.test(object, function(assert) {
+    assert.equal('firstSon', div.firstChild.id);
   });
 
   QUnit.test(object, function(assert) {
-    var div = Look.create(object);
-    assert.equal('tar', div.id);
+    assert.equal('secondSon', div.lastChild.id);
   });
 }
-testDivParameters({'tag':'div', 'class':'divClass', 'id':'divId'}, 'container');
 
+testDivRecursion({
+  'tag'   :'div',
+   'attr' : {
+      'class' : 'divClass',
+      'id'    : 'divId2'
+      },
 
+    'content' : [{
+      'tag'   : 'div',
+      'attr'  : {
+        'id'  : 'firstSon'
+        }
+      },{
+        'tag'   : 'div',
+        'attr'  : {
+          'id'  : 'secondSon'
+        }
+      }]
+      },
+    document.getElementById('container_three')
+  )
 
 /*TEST*/
