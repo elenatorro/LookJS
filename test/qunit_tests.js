@@ -5,46 +5,45 @@ var Look = new Look();
 
 
 /*###### TAG CREATION ######*/
-function testDivCreation(name, father) {
-  QUnit.test(name, function(assert) {
-    var son = Look.createDiv(father);
-    assert.equal(father.lastChild, son)
+
+/*Div Creation*/
+function testDivCreation(object, container) {
+  QUnit.test(object, function(assert) {
+    var div = Look.create(object, container);
+    assert.equal(container.lastChild, div)
   })
 }
+testDivCreation({'tag':'div'}, 'container');
 
-
-/*###### PLAYING WITH CSS ######*/
-function testAddingBackgroundColor(name, element, options) {
-  QUnit.test(name, function(assert) {
-    Look.cssOptions(element, options);
-    assert.equal(element.style.backgroundColor, 'blue');
+/*Div Creation by Default*/
+function testDivCreationDefault(object) {
+  QUnit.test(object, function(assert) {
+    var div = Look.create(object);
+    assert.equal(body.lastChild, div)
   })
 }
+testDivCreationDefault({'tag':'div'});
 
-function testAddingCssOptions(name, element, options) {
-  QUnit.test(name, function(assert) {
-    Look.cssOptions(element, options);
-    assert.equal(element.style.width, options.width);
-    assert.equal(element.style.height, options.height);
-    assert.equal(element.style.backgroundColor, options.backgroundColor);
-  })
+
+/*Div Parameters Id and Class*/
+function testDivParameters(object, container) {
+  QUnit.test(object, function(assert) {
+    var div = Look.create(object);
+    assert.equal('divClass', div.className);
+  });
+
+  QUnit.test(object, function(assert) {
+    var div = Look.create(object);
+    assert.equal('divId', div.id);
+  });
+
+  QUnit.test(object, function(assert) {
+    var div = Look.create(object);
+    assert.equal('tar', div.id);
+  });
 }
+testDivParameters({'tag':'div', 'class':'divClass', 'id':'divId'}, 'container');
 
-/*############## CALLING FUNCTIONS ##############*/
-testDivCreation("Look.createDiv, father",
-                  document.getElementById('father')
-                );
 
-testAddingBackgroundColor("Look.cssOptions, element, options",
-                  document.getElementById('father'),
-                  {'backgroundColor': 'blue'}
-                );
 
-testAddingCssOptions("Look.cssOptions, element, options",
-                  document.getElementById('father'),
-                    {
-                      'backgroundColor': 'blue',
-                      'width': '100px',
-                      'height': '100px'
-                    }
-                );
+/*TEST*/
