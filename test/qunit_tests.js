@@ -1,6 +1,3 @@
-var Look = new Look();
-
-
 /*############## TEST FUNCTIONS ##############*/
 
 
