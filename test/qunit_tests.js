@@ -69,4 +69,11 @@ testDivRecursion({
     document.getElementById('container_three')
   )
 
-/*TEST*/
+  function testDivCopy(copyFrom, copyTo) {
+    var div = Look.copy(copyFrom, copyTo);
+    QUnit.test(object, function(assert) {
+      assert.equal(div, div.lastChild);
+    });
+  }
+
+  testDivCreationDefault('container_three', 'container_four');
