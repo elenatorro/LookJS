@@ -1,8 +1,5 @@
 /*############## TEST FUNCTIONS ##############*/
 
-
-/*###### TAG CREATION ######*/
-
 /*Div Creation*/
 function testDivCreation(object, container) {
   QUnit.test(object, function(assert) {
@@ -37,7 +34,6 @@ testDivParameters({'tag':'div', 'attr' : {'class':'divClass', 'id':'divId'}}, do
 
 function testDivRecursion(object, container) {
   var div = Look.create(object,container);
-  console.log(object.content);
   QUnit.test(object, function(assert) {
     assert.equal('firstSon', div.firstChild.id);
   });
