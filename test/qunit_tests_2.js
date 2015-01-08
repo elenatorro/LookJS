@@ -57,9 +57,25 @@ function testTranslation(localizer, text_element) {
 }
 
 var localize = {
-  'test_text' : {
-    ES : 'Bienvenidos',
-    EN : 'Welcome'
+  id : {
+    'test_text' : {
+      ES : 'Bienvenidos',
+      EN : 'Welcome'
+    }
+  },
+
+  class : {
+    'test_class_text' : {
+      0 : {
+        ES : 'Hola',
+        EN : 'Hello'
+      },
+
+      1 : {
+        ES : 'Adios',
+        EN : 'Bye'
+      }
+    }
   }
 };
 
