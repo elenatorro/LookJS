@@ -25,9 +25,9 @@ var path = require('path');
 /************* Files *************/
 gulp.task('scripts', function() {
     return gulp.src(scriptRootPath + scriptExtension)
-        .pipe(concat('script.js'))
+        .pipe(concat('look.js'))
         .pipe(gulp.dest(scriptDestPath))
-        .pipe(rename('script.min.js'))
+        .pipe(rename('look.min.js'))
         .pipe(uglify())
         .pipe(gulp.dest(scriptDestPath));
 });
