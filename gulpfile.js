@@ -32,6 +32,13 @@ gulp.task('scripts', function() {
         .pipe(gulp.dest(scriptDestPath));
 });
 
+gulp.task('looklib', function() {
+  return gulp.src('lib/Look.js')
+        .pipe(uglify())
+        .pipe(rename('Look.min.js'))
+        .pipe(gulp.dest('lib'));
+})
+
 /************* Others *************/
 gulp.task('lint', function() {
     return gulp.src(scriptRootPath + scriptExtension)
