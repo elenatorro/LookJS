@@ -4,6 +4,11 @@
 
 LookJS is a tiny library created for DOM and frontend operations. It is just implemented in order to solve personal problems I have had to manage while developing web applications and websites.
 
+###Download it:
+
+* [Look.js](https://github.com/elenatorro/LookJS/blob/master/lib/Look.js)
+* [Look.min.js](https://github.com/elenatorro/LookJS/blob/master/lib/Look.min.js)
+
 ##Features
 * No dependencies
 * Very simple
@@ -16,6 +21,7 @@ LookJS is a tiny library created for DOM and frontend operations. It is just imp
 
 ####Object creation
 * 'container' is optional, if it's not set, the new elements will append to the body *
+
 ```
 var div = Look.create(object, container);
 Look.create(object, container)
