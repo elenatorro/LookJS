@@ -46,19 +46,22 @@ Objects are send as JSON objects. In this way, it is easier to say if you want a
     'id'    : 'divId2'
     },
 
-    'content' : [{
-      'tag'   : 'div',
-      'attr'  : {
-        'id'  : 'firstSon'
-      }
-      },{
+    'content' : [
+      {
         'tag'   : 'div',
         'attr'  : {
-          'id'  : 'secondSon'
-        }
-        }]
-      }
-  ```
+            'id'  : 'firstSon'
+            }
+      },
+      {
+        'tag'   : 'div',
+        'attr'  : {
+            'id'  : 'secondSon'
+          }
+      }]
+    }
+```
+
 Structure:
 * First, 'tag' is the name of the element (div, section, aside...)
 * Then, 'attr' is for the different attributes.
