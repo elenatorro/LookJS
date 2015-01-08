@@ -2,7 +2,7 @@
 
 ##What is it?
 
-LookJS is a tiny library created for DOM and frontend operations. It is just implemented in order to solve personal problems I have had to manage while developing web applications and websites.
+LookJS is a tiny library created for DOM and frontend operations. It is just implemented in order to solve personal problems I had to manage while developing web applications and websites.
 
 ###Download it:
 
