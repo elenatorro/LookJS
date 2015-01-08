@@ -19,8 +19,6 @@
   "devDependencies": {
     "chai": "*",
     "gulp": "^3.8.10",
-    "gulp-less": "^1.3.6",
-    "mocha": "*",
     "qunitjs": "^1.15.0",
     "should": "*"
   },
@@ -30,11 +28,12 @@
   "keywords": [
     "frontend",
     "library",
-    "CSS"
+    "CSS",
+    "localize",
+    "DOM"
   ],
   "license": "MIT",
   "scripts": {
-    "test": "sh test/test.sh",
-    "prepublish": "npm prune"
+    "lib": "Look.js"
   }
 }
