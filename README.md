@@ -14,10 +14,19 @@ LookJS is a tiny library created for DOM and frontend operations. It is just imp
 
 ###DOM operations
 
-
+####Object creation
+* 'container' is optional, if it's not set, the new elements will append to the body *
 ```
 var div = Look.create(object, container);
+Look.create(object, container)
+Look.createMany(3, object, container)
 ```
+
+####Object copy
+```
+Look.copy(objectFrom, containerDestination);
+```
+
 ####JSON structure for HTML tags
 
 Objects are send as JSON objects. In this way, it is easier to say if you want an element to have an id, a class or any other attribute at the same time you create it. And you can create multiple elements at the same time.
@@ -49,6 +58,18 @@ Structure:
 * Then, 'attr' is for the different attributes.
 * Then, 'content', where you can just set text or other elements.
 
+###Get elements
+
+```
+Look.getBy.id(id)
+Look.getBy.className(class, at)
+Look.getBy.tagName(tag, at)
+Look.getBy.href(link, at) //only for elements with href attribute
+Look.getBy.src(link, at) //only for images
+```
+
+*'at' is optional, it indicates the position, so the function only returns one element.
+Otherwise, it returns a htmlcollection*
 
 ### Simple Multilanguage
 
