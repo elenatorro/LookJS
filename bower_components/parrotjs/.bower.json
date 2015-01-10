@@ -1,0 +1,43 @@
+{
+  "name": "parrotjs",
+  "description": "Browser features today. High-level wrapper for browser features.",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "dependencies": {
+    "fn-partial": "*"
+  },
+  "devDependencies": {
+    "jquery": "1.x",
+    "quojs": "*",
+    "zepto": "*"
+  },
+  "homepage": "https://github.com/sailorjs/parrotjs",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "frontend",
+    "micro",
+    "modular",
+    "perfomance",
+    "api",
+    "html5"
+  ],
+  "license": "MIT",
+  "main": "dist/parrot.js",
+  "_release": "15648f3c00",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "15648f3c004a48396e9eb8b85bf9ed7e372d8719"
+  },
+  "_source": "git://github.com/sailorjs/parrotjs.git",
+  "_target": "*",
+  "_originalSource": "parrotjs",
+  "_direct": true
+}

@@ -80,3 +80,28 @@ var localize = {
 };
 
 testTranslation(localize, document.getElementById('test_text'));
+
+function testMultipleElements(localizer, text_element) {
+  QUnit.test(localizer, function(assert) {
+    var link = Look.changeLanguage('EN', localizer);
+    assert.equal(text_element[0].innerHTML, 'English')
+  })
+}
+
+var localize_multiple = {
+    class : {
+      'test_multiple_elements' : {
+        0 : {
+          ES : 'Español',
+          EN : 'English'
+        },
+
+        1 : {
+          ES : 'Español',
+          EN : 'English'
+        }
+      }
+    }
+  };
+
+  testMultipleElements(localize_multiple, document.getElementsByClassName('test_multiple_elements'));

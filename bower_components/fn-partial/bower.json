@@ -1,0 +1,25 @@
+{
+  "name": "fn-partial",
+  "main": "dist/fn-partial.js",
+  "version": "0.12.12",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "description": "Feel like a memory pointer. Pass a reference to a function.",
+  "license": "MIT",
+  "homepage": "https://github.com/Kikobeats/fn-partial",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+  "function",
+  "partial",
+  "alternative",
+  "memory",
+  "pointer"
+  ]
+}

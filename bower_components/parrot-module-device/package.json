@@ -1,0 +1,39 @@
+{
+  "name": "parrot-module-device",
+  "description": "Automatically detect your device and provide some useful information: vendor, screen properties, browser vendor and version,...",
+  "version": "0.12.16",
+  "author": {
+    "name": "Kiko Beats",
+    "email": "josefrancisco.verdu@gmail.com",
+    "url": "https://github.com/Kikobeats"
+  },
+  "devDependencies": {
+    "coffee-script": "*",
+    "gulp": "*",
+    "gulp-coffee": "*",
+    "gulp-concat": "*",
+    "gulp-connect": "*",
+    "gulp-header": "*",
+    "gulp-open": "*",
+    "gulp-uglify": "*",
+    "gulp-util": "*",
+    "gulp-watch": "*",
+    "mocha": "*",
+    "should": "*"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "homepage": "https://github.com/parrotjs/parrot-module-device",
+  "keywords": [
+    "parrot",
+    "module",
+    "device",
+    "mobile",
+    "screen",
+    "detection"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": "parrotjs/parrot-module-device"
+}

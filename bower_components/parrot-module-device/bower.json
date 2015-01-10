@@ -1,0 +1,34 @@
+{
+  "name": "parrot-module-device",
+  "description": "Automatically detect your device and provide some useful information: vendor, screen properties, browser vendor and version,...",
+  "version": "0.12.16",
+  "authors": [
+    "Kiko Beats <josefrancisco.verdu@gmail.com>"
+  ],
+  "dependencies": {
+    "aspect-ratio": "*",
+    "ua-parser-js": "~0.7.3"
+  },
+  "devDependencies": {
+    "parrotjs": "*"
+  },
+  "homepage": "https://github.com/parrotjs/parrot-boilerplate",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "keywords": [
+    "parrot",
+    "module",
+    "device",
+    "mobile",
+    "screen",
+    "detection"
+  ],
+  "license": "MIT",
+  "main": "dist/parrot-boilerplate.js",
+  "repository": "parrotjs/parrot-boilerplate"
+}
