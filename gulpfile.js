@@ -14,4 +14,11 @@ gulp.task('looklib', function() {
         .pipe(gulp.dest('lib'));
 })
 
+gulp.task('buildlook', function() {
+  return gulp.src(['lib/look.dom.js','lib/look.language.js'])
+  .pipe(concat('Look.js'))
+  .pipe(gulp.dest('lib'));
+})
+
+
 gulp.task('default', ['looklib']);

@@ -1,7 +1,6 @@
 /*############## TEST FUNCTIONS ##############*/
 
 /*Link test */
-
 function testLinkCreation(href, linkElement) {
   QUnit.test(href, function(assert) {
     var link = Look.getBy.href(href);
@@ -51,8 +50,8 @@ testLinkError('http://elenatorro.com', Look.create(linkOptions));
 
 function testTranslation(localizer, text_element) {
   QUnit.test(localizer, function(assert) {
-    var link = Look.changeLanguage('EN', localizer);
-    assert.equal(text_element.innerHTML, 'Welcome')
+    Look.language.change('EN', localizer);
+    assert.equal(text_element.innerHTML, 'Welcome');
   })
 }
 
@@ -81,10 +80,10 @@ var localize = {
 
 testTranslation(localize, document.getElementById('test_text'));
 
-function testMultipleElements(localizer, text_element) {
-  QUnit.test(localizer, function(assert) {
-    var link = Look.changeLanguage('EN', localizer);
-    assert.equal(text_element[0].innerHTML, 'English')
+function testMultipleElements(localize_multiple, text_elements) {
+  QUnit.test(localize_multiple, function(assert) {
+    Look.language.change('EN', localize_multiple);
+    assert.equal(text_elements[0].innerHTML, 'English');
   })
 }
 
