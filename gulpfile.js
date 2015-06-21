@@ -15,10 +15,10 @@ gulp.task('looklib', function() {
 })
 
 gulp.task('buildlook', function() {
-  return gulp.src(['lib/look.dom.js','lib/look.language.js'])
+  return gulp.src(['source/lib/look.dom.js','source/lib/look.language.js'])
   .pipe(concat('Look.js'))
   .pipe(gulp.dest('lib'));
 })
 
 
-gulp.task('default', ['looklib']);
+gulp.task('default', ['buildlook','looklib']);
