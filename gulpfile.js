@@ -1,10 +1,10 @@
 /********* Dependencies *********/
-var gulp = require('gulp');
+var gulp   = require('gulp');
 var jshint = require('gulp-jshint');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var path = require('path');
+var path   = require('path');
 
 /************* Tasks *************/
 gulp.task('looklib', function() {
@@ -15,10 +15,10 @@ gulp.task('looklib', function() {
 })
 
 gulp.task('buildlook', function() {
-  return gulp.src(['source/lib/look.dom.js','source/lib/look.language.js'])
+  return gulp.src(['lib/source/*.js'])
   .pipe(concat('Look.js'))
   .pipe(gulp.dest('lib'));
 })
 
 
-gulp.task('default', ['buildlook','looklib']);
+gulp.task('default', ['buildlook']);

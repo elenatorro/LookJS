@@ -1,6 +1,3 @@
-function Controller(id) {
-	
-}
 var Look = {
 
   // -- Private --------------------------------------------------------------
@@ -46,19 +43,16 @@ var Look = {
 
   createMany :
   function(times, object, container) {
-    var many = [];
     var i = 0;
     for (i; i < times; i++) {
-      many.push(Look.create(object, container));
+      Look.create(object, container);
     }
-    return many;
   },
 
   copy :
   function(from, to) {
     return this.create(from.cloneNode(true), to);
   },
-
   // -- document operations substitution ---------------------------------
 
   newElement :
@@ -151,39 +145,4 @@ Look.language = {
       }
     };
   }
-}
-
-Look.models = {
-	list: {},
-	add: function(id, model) {
-		if (!Look.models.checkId(model)) {
-			Look.models.list[id] = model;
-		}
-		return model
-	},
-	checkId: function(id) {
-		return ((id !== "") 
-			&& (id !== null) 
-			&& (Look.models.list.hasOwnProperty(id)))
-	},
-	get: function(id) {
-		return Look.models.list[id];
-	}
-}
-
-Look.createFromModel = function(id, container) {
-	return Look.create(Look.models.get(id), container);
-}
-Look.style = {
-	setProperty: 
-	function(element, property, value) {
-		element.style[property] = value;
-	},
-
-	setStyle: 
-	function(element, properties) {
-		for (property in properties) {
-			Look.style.setProperty(element, property, properties[property]);
-		}
-	}
 }

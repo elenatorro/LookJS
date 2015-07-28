@@ -1,0 +1,27 @@
+{
+  "name": "lookjs",
+  "description": "Tiny js framework",
+  "homepage": "https://github.com/elenatorro/lookjs",
+  "version": "0.1.0",
+  "main": "./lib/Look.js",
+  "authors": [
+    {
+      "name": "Elena Torró",
+      "email": "elenatorro@gmail.com",
+      "homepage": "https://github.com/elenatorro"
+    }
+  ],
+  "repository": "elenatorro/lookjs",
+  "bugs": {
+    "url": "https://github.com/elenatorro/lookjs/issues"
+  },
+  "keywords": [],
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "license": "MIT"
+}
