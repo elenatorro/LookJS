@@ -1,0 +1,26 @@
+.box {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	margin: 5px;
+}
+
+.blue-box {
+	background-color: blue;
+}
+
+.big {
+	background-color: silver;
+	width: 300px;
+	height: 300px;
+
+}
+
+.circle {
+	border-radius: 50%;
+}
+
+.transition {
+	-webkit-transition: width 2s, height 2s;
+    transition: width 2s, height 2s;
+}
