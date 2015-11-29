@@ -1,7 +1,7 @@
 {
   "name": "lookjs",
-  "description": "Micro library for frontend operations I always need",
-  "version": "0.1.0",
+  "description": "Micro library for frontend operations",
+  "version": "0.1.1",
   "author": {
     "name": "Elena Torro",
     "email": "elenatorrou@gmail.com",
