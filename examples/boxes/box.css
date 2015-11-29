@@ -9,6 +9,10 @@
 	background-color: blue;
 }
 
+.dark {
+	background-color: black;
+}
+
 .big {
 	background-color: silver;
 	width: 300px;
