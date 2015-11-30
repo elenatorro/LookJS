@@ -30,12 +30,19 @@ body, html {
 	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
+.header--subtitle {
+	font-size: 80px;
+	width: 80px;
+	line-height: 280px;
+}
+
 .circle-eye-out {
 	width: 120px;
 	height: 120px;
 	border-radius: 50%;
 	background-color: white;
 	border: 20px solid black;
+	margin: 20px auto 0 auto;
 }
 
 .circle-eye-in {
@@ -44,8 +51,6 @@ body, html {
 	height: 50px;
 	background-color: black;
 	border-radius: 50%;
-	-webkit-transition: top 0.5s; /* Safari */
-	-webkit-transition: left 0.5s; /* Safari */
-    transition: top 0.5s;
-    transition: left 0.5s;
+	-webkit-transition: all 0.5s; /* Safari */
+    transition: all 0.5s;
 }
