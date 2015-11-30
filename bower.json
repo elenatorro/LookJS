@@ -1,8 +1,8 @@
 {
   "name": "lookjs",
-  "description": "Tiny js framework",
+  "description": "Micro library for frontend operations",
   "homepage": "https://github.com/elenatorro/lookjs",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "./lib/Look.js",
   "authors": [
     {
@@ -19,9 +19,11 @@
   "ignore": [
     "**/.*",
     "bower_components",
+    "examples",
     "node_modules",
     "test",
-    "tests"
+    "tests",
+    "assets"
   ],
   "license": "MIT"
 }
