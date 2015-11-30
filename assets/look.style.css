@@ -2,6 +2,18 @@ body, html {
 	display: block;
 	height: 100%;
 	padding: 0;
+	background-color: #00ff00;
+		font-family: "Trebuchet MS", Helvetica, sans-serif
+}
+
+.main-container {
+	width: 100%;
+	text-align: center;
+}
+
+.main-container > h2 {
+	font-size: 100px;
+	margin: 50px;
 }
 
 .header {
@@ -14,7 +26,7 @@ body, html {
 	height: 200px;
 	width: inherit;
 	position: absolute;
-	margin: 200px auto 0 auto;
+	margin: 20px auto 0 auto;
 	display: block;
 	display: flex;
 	justify-content: center; 
@@ -23,16 +35,15 @@ body, html {
 	display: inline-block;
 	font-size: 200px;
 	height: 200px;
-	width: 200px;
+	width: 150px;
 	line-height: 200px;
 	text-align: center;
 	float: left;
-	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif
 }
 
 .header--subtitle {
 	font-size: 80px;
-	width: 80px;
+	width: 40px;
 	line-height: 280px;
 }
 
@@ -43,6 +54,7 @@ body, html {
 	background-color: white;
 	border: 20px solid black;
 	margin: 20px auto 0 auto;
+	border-bottom: ;
 }
 
 .circle-eye-in {
