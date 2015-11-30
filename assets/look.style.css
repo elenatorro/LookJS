@@ -14,7 +14,7 @@ body, html {
 	height: 200px;
 	width: inherit;
 	position: absolute;
-	margin: 0 auto 0 auto;
+	margin: 200px auto 0 auto;
 	display: block;
 	display: flex;
 	justify-content: center; 
@@ -33,7 +33,6 @@ body, html {
 .circle-eye-out {
 	width: 120px;
 	height: 120px;
-	margin-top: 10%;
 	border-radius: 50%;
 	background-color: white;
 	border: 20px solid black;
@@ -45,4 +44,8 @@ body, html {
 	height: 50px;
 	background-color: black;
 	border-radius: 50%;
+	-webkit-transition: top 0.5s; /* Safari */
+	-webkit-transition: left 0.5s; /* Safari */
+    transition: top 0.5s;
+    transition: left 0.5s;
 }
