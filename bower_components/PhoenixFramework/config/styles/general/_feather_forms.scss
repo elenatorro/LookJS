@@ -1,0 +1,114 @@
+form > section {
+  margin-bottom: 10px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  margin: 5px 0 5px 0;
+  border: 2px solid silver;
+}
+
+section.inline-form {
+  display: table;
+  width: 100%;
+}
+
+label.inline {
+  display: table-cell;
+  padding-right: 10px;
+}
+
+input.inline, textarea.inline {
+  display: table-column;
+  border: 2px solid silver;
+
+  &.right {
+    border-right: none;
+  }
+
+  &.left {
+    border-left: none;
+  }
+}
+
+button.inline {
+  display: table-column;
+  background-color: silver;
+  padding: 10px;
+  border: 2px solid silver;
+  margin: 0;
+
+  &.left {
+    border-right: none;
+  }
+
+  &.right {
+    border-left: none;
+  }
+}
+
+label, button, input, textarea {
+  min-height: 50;
+  &.w10 {
+    width: 10%;
+  }
+  &.w20 {
+    width: 20%;
+  }
+  &.w30 {
+    width: 30%;
+  }
+  &.w40 {
+    width: 40%;
+  }
+  &.w50 {
+    width: 50%;
+  }
+  &.w60 {
+    width: 60%;
+  }
+  &.w70 {
+    width: 70%;
+  }
+  &.w80 {
+    width: 80%;
+  }
+  &.w90 {
+    width: 90%;
+  }
+  &.w100 {
+    width: 100%;
+  }
+}
+
+select {
+  border: none;
+  border-radius: 0;
+  padding: 5px;
+  color: white;
+  height: 50px;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea {
+  height: 46px;
+  font-size: 1em;
+  font-family: 'Open Sans';
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+textarea:focus, input:focus, section:focus {
+  outline: none !important;
+}
+
+@media screen and (max-width: 600px) {
+  div.search {
+    width: 80%;
+  }
+}

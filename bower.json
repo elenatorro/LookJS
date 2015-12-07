@@ -25,5 +25,8 @@
     "tests",
     "assets"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "PhoenixFramework": "phoenixframework#~0.1.3"
+  }
 }
