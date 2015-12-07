@@ -1,11 +1,11 @@
 'use strict'
 
-var eyes = {
-  left: Look.createFromComponent('Eye', Look.getBy.id('left-eye')),
-  right: Look.createFromComponent('Eye', Look.getBy.id('right-eye')),
-  size: 100,
-  border: 20
-}
+var eyes = {}
+
+ function deleteEyes() {
+  Look.remove(eyes.left, Look.getBy.id('left-eye'))
+  Look.remove(eyes.right, Look.getBy.id('right-eye'))
+ }
 
 function drawEyes () {
   document.body.removeEventListener('mousemove')
@@ -17,21 +17,21 @@ function drawEyes () {
     eyes: {
       left: {
         left: {
-          min: eyes.left.offsetLeft + eyes.border,
+          min: eyes.left.offsetLeft,
           max: eyes.left.offsetLeft + eyes.size
         },
         top: {
-          min: eyes.left.offsetTop + eyes.border,
+          min: eyes.left.offsetTop,
           max: eyes.left.offsetTop + eyes.size
         }
       },
       right: {
         left: {
-          min: eyes.right.offsetLeft + eyes.border,
+          min: eyes.right.offsetLeft,
           max: eyes.right.offsetLeft + eyes.size
         },
         top: {
-          min: eyes.right.offsetTop + eyes.border,
+          min: eyes.right.offsetTop,
           max: eyes.right.offsetTop + eyes.size
         }
       }
@@ -80,6 +80,18 @@ function drawEyes () {
   })
 }
 
-drawEyes()
+function initEyes() {
+  deleteEyes()
+  eyes = {
+    left: Look.createFromComponent('Eye', Look.getBy.id('left-eye')),
+    right: Look.createFromComponent('Eye', Look.getBy.id('right-eye'))
+  }
 
-window.onresize = drawEyes
+  eyes.size = eyes.left.clientHeight - 20
+
+  drawEyes()
+}
+
+initEyes()
+
+window.onresize = initEyes

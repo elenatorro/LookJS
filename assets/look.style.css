@@ -2,25 +2,52 @@ body, html {
 	display: block;
 	height: 100%;
 	padding: 0;
-	background-color: #00ff00;
-		font-family: "Trebuchet MS", Helvetica, sans-serif
+	background-color: #E8E8E8;
+	font-family: "Trebuchet MS", Helvetica, sans-serif
 }
 
 .main-container {
 	width: 100%;
-	text-align: center;
 }
 
 .main-container > h2 {
-	font-size: 100px;
-	margin: 50px;
+	font-size: 30px;
+	margin: 20px;
+	text-align: center;
+}
+
+.container {
+	margin: 5px;
 }
 
 .header {
-	width: 100%;
+	min-width: 300px;
 	height: 200px;
 	text-align: center;
 }
+
+.header:after {
+	background-color: black;
+	width: 50px;	
+	height: 30px;
+	margin: 0 auto 0 auto;
+	left: 280px;
+	top: 170px;
+	border-radius: 50% / 0 0 100% 100%;
+	position: absolute;
+	content: "";
+}
+
+.header:before {
+	background-color: #47E4C5;
+	width: 300px;	
+	height: 200px;
+	margin: 0 auto 0 auto;
+	left: 150px;
+	border-radius: 50% / 100% 100% 0 0;
+	position: absolute;
+	content: "";
+	}
 
 .header--title-container {
 	height: 200px;
@@ -31,6 +58,7 @@ body, html {
 	display: flex;
 	justify-content: center; 
 }
+
 .header--title {
 	display: inline-block;
 	font-size: 200px;
@@ -65,4 +93,46 @@ body, html {
 	border-radius: 50%;
 	-webkit-transition: all 0.5s; /* Safari */
     transition: all 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+  .circle-eye-out {
+  	width: 60px;
+  	height: 60px;
+  	border: 10px solid black;
+  	margin: 10px auto 0 auto;
+  }
+
+  .circle-eye-in {
+  	width: 30px;
+  	height: 30px;
+  }
+
+  .header {
+  	height: 100px;
+  }
+
+  .header--title {
+	font-size: 100px;
+	height: 200px;
+	width: 75px;
+	line-height: 100px;
+	}
+
+	.header--subtitle {
+		font-size: 40px;
+		width: 20px;
+		line-height: 140px;
+	}
+.header:before {
+	width: 150px;	
+	height: 100px;
+	margin: 0 auto 0 auto;
+	left: 75px;
+}
+
+.header:after {
+	width: 0px;	
+	height: 0px;
+}
 }
