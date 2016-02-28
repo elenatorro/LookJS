@@ -96,27 +96,27 @@ body, html {
 }
 
 @media screen and (max-width: 600px) {
-  .circle-eye-out {
-  	width: 60px;
-  	height: 60px;
-  	border: 10px solid black;
-  	margin: 10px auto 0 auto;
-  }
+	.circle-eye-out {
+		width: 60px;
+		height: 60px;
+		border: 10px solid black;
+		margin: 10px auto 0 auto;
+	}
 
-  .circle-eye-in {
-  	width: 30px;
-  	height: 30px;
-  }
+	.circle-eye-in {
+		width: 30px;
+		height: 30px;
+	}
 
-  .header {
-  	height: 100px;
-  }
+	.header {
+		height: 100px;
+	}
 
-  .header--title {
-	font-size: 100px;
-	height: 200px;
-	width: 75px;
-	line-height: 100px;
+	.header--title {
+		font-size: 100px;
+		height: 200px;
+		width: 75px;
+		line-height: 100px;
 	}
 
 	.header--subtitle {
@@ -124,12 +124,12 @@ body, html {
 		width: 20px;
 		line-height: 140px;
 	}
-.header:before {
-	width: 150px;	
-	height: 100px;
-	margin: 0 auto 0 auto;
-	left: 75px;
-}
+	.header:before {
+		width: 150px;	
+		height: 100px;
+		margin: 0 auto 0 auto;
+		left: 75px;
+	}
 
 .header:after {
 	width: 0px;	
