@@ -2,7 +2,7 @@
   "name": "lookjs",
   "description": "Micro library for frontend operations",
   "homepage": "https://github.com/elenatorro/lookjs",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "main": "./lib/Look.js",
   "authors": [
     {
